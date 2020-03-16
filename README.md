@@ -1,4 +1,4 @@
-# dev.com-faq-git
+# dev.com-faq-hardware
 
 > FAQ Hardware pour developpez.com
 
@@ -70,9 +70,9 @@ Config cf `.markdownlist.json` ([json schema](https://github.com/DavidAnson/mark
 
 ### Génération du sommaire
 
-Le fichier `SUMMARY.md` est généré par le script `build-summary`.
+Le sommaire est généré par le script `build-summary`. Ce dernier viendra compléter le fichier `SUMMARY.md` avec le sommaire de la FAQ.
 
-## tester la FAQ avec les outils dev.com
+## Tester la FAQ avec les outils de Developpez.com
 
 Copier le fichier xml généré dans un répertoire du même nom (sans l'extension) sous le répertoire `documents/` à partir de la racine du kit.
 Par exemple pour le fichier `dvlp-faq-git.xml`, on va le copier sous `documents/dvlp-faq-git/dvlp-faq-git.xml`.
@@ -87,7 +87,7 @@ Le bug css n'est pas résolu, il faut donc copier les css de `html/dvlp-faq-git/
 
 On examine la faq en lançant simplement le fichier `index.html` dans un navigateur.
 
-## visualiser la FAQ en html
+## Visualiser la FAQ en html
 
 La commande `npm run serve` permet de générer une version `html` de la FAQ dans le répertoire `dist/`.
 
