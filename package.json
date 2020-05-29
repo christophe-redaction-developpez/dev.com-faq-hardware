@@ -15,7 +15,7 @@
     },
     "devDependencies": {
         "dvlp-faq-md-summary": "git@github.com:LittleWhite-tb/dvlp-faq-md-summary.git#second-inner-level",
-        "dvlp-faq-xml": "git@github.com:LittleWhite-tb/dvlp-faq-xml.git#inner-level",
+        "dvlp-faq-xml": "git@github.com:LittleWhite-tb/dvlp-faq-xml.git#develop",
         "http-server": "^0.11.1",
         "husky": "^1.3.1",
         "markdownlint-cli": "^0.13.0",
