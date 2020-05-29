@@ -39,6 +39,6 @@ entete:
     urlhttp: https://hardware.developpez.com/faq/
     nomfaq: FAQ Hardware
 
-edito: FAQ Git en français pour developpez.com
+edito: FAQ Hardware en français pour developpez.com
 licence: CC-BY-SA-4.0
 ---
