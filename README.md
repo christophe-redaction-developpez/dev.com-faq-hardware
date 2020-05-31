@@ -1,102 +1,40 @@
 # dev.com-faq-hardware
 
-> FAQ Hardware pour developpez.com
-
-[![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-sa/4.0/)
+Bienvenue sur le projet communautaire de FAQ Hardware !
+Cette FAQ est publiée sur [Developpez.com](https://hardware.developpez.com/faq/), tout en restant disponible sur GitHub. Toute contribution est bienvenue !
 
 ## Contribuer
 
-### Préparez votre fork et votre dépôt local
+L'édition est possible en forkant le projet et en effectuant une pull request ou simplement en utilisant l'interface Web de GitHub.
+> La FAQ s'écrit au [format MarkDown](https://www.markdownguide.org/basic-syntax).
 
-Commencez par cloner ce dépôt en local chez vous : 
+### Modifier une question/réponse
 
-```bash
-git clone https://github.com/LittleWhite-tb/dev.com-faq-hardware.git
+La modification d'une question/réponse est simple. Il suffit d'éditer le fichier correspondant à la question/réponse, que vous pouvez facilement retrouver dans le [sommaire](faq-content/SUMMARY.md).
+
+### Ajouter une question/réponse
+
+L'ajout d'une question/réponse se fait en créant un nouveau fichier nommé `XXX.qYYY.md` (où `XXX` renseigne le numéro de section et `YYY` le numéro de la question/réponse (c'est-à-dire, sa place dans la section)).
+Le fichier de question/réponse doit contenir les méta données suivantes :
+```
+---
+createDate: 2007-09-28
+lastUpdateDate: 2007-09-28
+author: Nom-ou-pseudo
+keywords: série, de, mot, clés
+---
+
+# FAQ Hardware pour developpez.com
+
+## Titre de votre question/réponse
 ```
 
-Puis forkez ce dépôt sur GitHub.
+Ensuite, il n'y a plus qu'à écrire la question/réponse au format MarkDown.
 
-Enfin, ajoutez un remote à votre dépôt local : 
+### Ajouter une section
 
-```bash
-git remote add fork <url-de-votre-fork>
+L'ajout d'une section s'effectue en ajoutant un nouveau dossier nommée `section-XXX` dans le dossier ./faq-content/. Pour les sous-sections, il faut nommer le dossier `section-XXX-YYY` où `XXX` indique le numéro de la section parent.
+Ensuite, le dossier de la section doit **obligatoirement** contenir un fichier `000.title.md` contenant le titre de la section :
 ```
-
-De cette façon, lorsque vous aurez besoin de mettre à jour votre dépôt local avec les contributions des autres contributeurs vous exécuterez :
-
-```bash
-git pull origin master
+# Titre de la section
 ```
-
-Et lorsque vous souhaiterez effectuer une contribution, vous pousserez votre branche de travail (jamais `master`, elle est de toute façon protégée) sur votre fork :
-
-```bash
-git push fork <nom-branche-de-travail>
-```
-
-Il ne restera plus qu'à ouvrir votre *pull request* depuis l'interface GitHub de votre fork.
-
-### Installation des dépendances
-
-Ce projet utilise un outil de lint (cf ci-dessous).
-
-Vous avez besoin de **Node.js** (version LTS minimum, donc `6+`) et de **npm** dans sa dernière version de préférence (`5.2+` minimum).
-
-Si c'est le cas vous pouvez exécuter un bête :
-
-```bash
-npm install
-```
-
-Testez que tout fonctionne en exécutant le linter :
-
-```bash
-npm test
-```
-
-### Linting du markdown
-
-Votre contribution devra passer ce contrôle pour être approuvée.
-
-Lors de la rédaction de votre contribution vous pouvez contrôler qu'elle est valide en exécutant `npm test`, les alertes s'affichent dans le terminal qui exécute npm.
-
-#### Informations complémentaires sur le linter
-
-Linting avec [DavidAnson/markdownlint](https://github.com/DavidAnson/markdownlint) via [igorshubovych/markdownlint-cli](https://github.com/igorshubovych/markdownlint-cli).
-
-[Liste des règles](https://github.com/DavidAnson/markdownlint/blob/master/doc/Rules.md#md001)
-
-Config cf `.markdownlist.json` ([json schema](https://github.com/DavidAnson/markdownlint/blob/master/schema/markdownlint-config-schema.json)).
-
-### Génération du sommaire
-
-Le sommaire est généré par le script `build-summary`. Ce dernier viendra compléter le fichier `SUMMARY.md` avec le sommaire de la FAQ.
-
-## Tester la FAQ avec les outils de Developpez.com
-
-Copier le fichier xml généré dans un répertoire du même nom (sans l'extension) sous le répertoire `documents/` à partir de la racine du kit.
-Par exemple pour le fichier `dvlp-faq-git.xml`, on va le copier sous `documents/dvlp-faq-git/dvlp-faq-git.xml`.
-Cf [doc du kit](http://club.developpez.com/outils/wiki/KitGeneration) pour les fichiers connexes (images, css, ...).
-
-Dans un shell aller dans le répertoire du kit `script/` et exécuter le script `buildFaq` avec le nom du répertoire cible.
-Par exemple pour construire la faq de l'exemple précédent : `sh buildFaq dvlp-faq-git`.
-
-Le kit génère les fichiers de la faq dans `html/<nom-de-la-faq>`. Dans notre exemple précédent ça donne `html/dvlp-faq-git`.
-
-Le bug css n'est pas résolu, il faut donc copier les css de `html/dvlp-faq-git/css/` à la racine de la faq.
-
-On examine la faq en lançant simplement le fichier `index.html` dans un navigateur.
-
-## Visualiser la FAQ en html
-
-La commande `npm run serve` permet de générer une version `html` de la FAQ dans le répertoire `dist/`.
-
-Il s'agit simplement de pouvoir vérifier la FAQ dans un navigateur sans passer par le Kit. Aucune mise en forme disponible à ce stade.
-
-## Licence et condition d'utilisation
-
-La licence est indiquée dans le fichier [`LICENCE.md`](LICENCE.md).
-
-## Contact
-
-[Profil sur developpez.com](https://www.developpez.net/forums/u240267/littlewhite/)
