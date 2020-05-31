@@ -1,6 +1,7 @@
 # dev.com-faq-hardware
 
 Bienvenue sur le projet communautaire de FAQ Hardware !
+
 Cette FAQ est publiée sur [Developpez.com](https://hardware.developpez.com/faq/), tout en restant disponible sur GitHub. Toute contribution est bienvenue !
 
 ## Contribuer
