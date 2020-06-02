@@ -16,6 +16,10 @@ auteurs:
       fullname: lakitrid
       url: https://www.developpez.net/forums/u80072/lakitrid/
       role: auteur
+    - name: LittleWhite
+      fullname: Alexandre Laurent
+      url: https://www.developpez.net/forums/u240267/littlewhite/
+      role: auteur
 
 editeur:
     edversion: Version 2.45
