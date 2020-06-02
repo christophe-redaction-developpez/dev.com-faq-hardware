@@ -39,3 +39,15 @@ Ensuite, le dossier de la section doit **obligatoirement** contenir un fichier `
 ```
 # Titre de la section
 ```
+
+### Ajouter un auteur
+
+Vous venez d'ajouter votre première question à la FAQ. Par conséquent, vous ne faites pas encore parti des auteurs reconnus. En effet, il est nécessaire de vous ajouter parmi la liste des auteurs de cette FAQ. Pour cela, éditez le fichier le [SUMMARY.md](faq-content/SUMMARY.md) pour y ajouter un bloc comme celui-ci, dans les méta-données :
+
+```
+    - name: LittleWhite
+      fullname: Alexandre Laurent
+      url: https://www.developpez.net/forums/u240267/littlewhite/
+      role: auteur
+```
+Le `name` doit correspondre à `author` de la question/réponse.
