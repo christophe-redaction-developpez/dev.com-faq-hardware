@@ -63,6 +63,7 @@ licence: CC-BY-SA-4.0
 - [Comment remédier aux messages d'erreur du BIOS ?](section-002-001/002.q004.md)
 - [Que faire en cas de bip ou de messages d'erreurs au démarrage ?](section-002-001/002.q005.md)
 - [Que faire en cas de "KB/INTERFACE ERROR" au démarrage ?](section-002-001/002.q006.md)
+- [Qu'est ce que UEFI ?](section-002-001/002.q007.md)
 
 ### Processeur
 
@@ -81,10 +82,18 @@ licence: CC-BY-SA-4.0
 - [Comment formater un disque dur ?](section-003/003.q003.md)
 - [Comment résoudre le problème d'un disque dur "SATA" non reconnu ?](section-003/003.q004.md)
 - [Comment effectuer un transfert de disque dur à disque dur ?](section-003/003.q005.md)
+- [Qu'est ce qu'un RAID ?](section-003/003.q006.md)
+- [Qu'est ce que la stratégie RAID 0 ?](section-003/003.q007.md)
+- [Qu'est ce que la stratégie RAID 1 ?](section-003/003.q008.md)
+- [Qu'est ce que la stratégie RAID 1 ?](section-003/003.q009.md)
+- [Qu'est ce que la stratégie RAID 6 ?](section-003/003.q010.md)
+- [Qu'est ce que la stratégie RAID 10 ?](section-003/003.q011.md)
+- [Qu'est ce que la stratégie RAID F1 ?](section-003/003.q012.md)
 
 ## Réseau
 
 - [Quelle est la différence entre Hub et Switch ?](section-004/004.q001.md)
+- [Quelle est la différence entre un switch managé et non managé ?](section-004/004.q002.md)
 
 ## Divers
 
