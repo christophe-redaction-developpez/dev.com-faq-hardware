@@ -85,10 +85,11 @@ licence: CC-BY-SA-4.0
 - [Qu'est ce qu'un RAID ?](section-003/003.q006.md)
 - [Qu'est ce que la stratégie RAID 0 ?](section-003/003.q007.md)
 - [Qu'est ce que la stratégie RAID 1 ?](section-003/003.q008.md)
-- [Qu'est ce que la stratégie RAID 1 ?](section-003/003.q009.md)
+- [Qu'est ce que la stratégie RAID 5 ?](section-003/003.q009.md)
 - [Qu'est ce que la stratégie RAID 6 ?](section-003/003.q010.md)
 - [Qu'est ce que la stratégie RAID 10 ?](section-003/003.q011.md)
 - [Qu'est ce que la stratégie RAID F1 ?](section-003/003.q012.md)
+- [Qu'est ce que la stratégie JBOD ?](section-003/003.q013.md)
 
 ## Réseau
 
