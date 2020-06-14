@@ -1,0 +1,12 @@
+---
+createDate: 2020-06-14
+lastUpdateDate: 2020-06-14
+author: Guardian
+keywords: VLAN, réseau local virtuel
+---
+
+Un VLAN (Virtual LAN) est un réseau local virtuel.
+Il s'agira de réglages effectués non pas au niveau du matériel mais de façon logicielle.
+
+Un VLAN permettra d'isoler certaines parties du réseau entre elle, y appliquer de la QoS (qualité de service, exemple partie de
+bande passante dédiée à un service), gérer des droits d'accès (ACL)
